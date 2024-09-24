@@ -1,9 +1,9 @@
-def apply_all_func(int_list: list, *functions):
+def apply_all_func(int_list: list, *functions: list):
 
     result = dict()
-    
+
     for i_func in functions:
-        result[ i_func.__name__] =i_func(int_list)
+        result[ i_func.__name__] = i_func(int_list)
 
     return(result)
 
