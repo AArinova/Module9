@@ -6,6 +6,7 @@ def all_variants(text: str):
             for j in range(i + 1, len(text) + 1):
                 if len(text[i:j]) == len_sym:
                     res.add(text[i:j])
+                    yield text[i:j]
 
     return res
 
