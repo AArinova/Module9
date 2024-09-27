@@ -8,7 +8,7 @@ def all_variants(text: str):
                     res.add(text[i:j])
                     yield text[i:j]
 
-    return res
+    
 
 
 a = all_variants("abc")
